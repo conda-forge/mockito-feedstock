@@ -3,6 +3,7 @@ schema_version: 1
 
 context:
   version: "2.0.4"
+  python_check_max: "3.15"
 
 package:
   name: mockito
@@ -23,7 +24,7 @@ requirements:
     - pip
     - python ${{ python_min }}.*
   run:
-    - python >==${{ python_min }}
+    - python >=${{ python_min }}
 
 tests:
   - python:
